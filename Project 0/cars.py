@@ -15,5 +15,3 @@ cars.query('mpg > 30').sort_values('mpg', ascending=False)
 
 # %%
 cars.groupby('cyl').agg(mean_wt = ('wt', np.mean)).reset_index()
-
-# %%
