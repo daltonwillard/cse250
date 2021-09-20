@@ -14,7 +14,7 @@ print(names.shape)
 
 
 # %%
-print(names.name.unique())
+print(names.name.unique().count())
 
 
 # %%
