@@ -3,8 +3,7 @@ import pandas as pd
 import altair as alt
 
 # %%
-url = "https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv"
-names = pd.read_csv(url)
+names = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
 
 # %%
 print(names.columns)
@@ -54,6 +53,5 @@ yr_circle = alt.Chart(pd.DataFrame({'year': [max_year], 'Total': [max_amt]})).ma
 # %%
 
 bruce_nation + yr_line + yr_circle
-# %%
 
 # %%
